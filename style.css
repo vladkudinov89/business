@@ -620,6 +620,83 @@ background-image: linear-gradient(to top, #fefefe, #e5e5e5);
 }
 
 
+/*portfolio begin*/
+
+.right-a {
+  float: right;
+  margin: 12px 0 0 30px;
+}
+
+.right-a li{  
+  display: inline-block;
+}
+
+.right-a a{
+  padding-left: 32px;
+  text-decoration: none;
+  color: #93daff;
+}
+
+.right-a li:hover a{
+  color: #fff;
+}
+
+ li.cur-a a{
+  color: #fff;
+}
+
+span.bold {
+ 
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.middle-block-portfolio{
+
+  background: #fff;
+  padding: 40px 0 20px 40px;
+  padding-bottom: 0;
+}
+
+
+
+.middle-block-portfolio li {
+  float: left;
+  width: 270px;
+  margin-right: 40px;
+}
+
+.middle-block-portfolio li.last-child{
+  margin-right: 0;
+}
+
+.middle-block-portfolio p {
+  font-size: 12px;
+  margin: 24px 0px 20px 0; 
+}
+
+
+.browse ul {
+  padding: 22px 41px;
+}
+
+.browse li{
+  
+  display: inline-block;
+}
+
+.browse a{
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  color: #0f4db6;
+  padding-right: 12px;
+}
+
+/*portfolio end*/
+
+
 .designer {
 	list-style-image: url(img/arrow-designer.png);
 	list-style-position: inside;
@@ -803,7 +880,9 @@ footer {
 .main-block::after,
 .middle-block::after,
 .wrapper::after,
-.benefis::after
+.benefis::after,
+.middle-block-portfolio::after,
+.right-a::after
 {
   content: ' ';
   display: table;
