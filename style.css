@@ -521,11 +521,7 @@ input[type=text],textarea{
 	color: #575757;
 }
 
-.blurbs:after {
-	content: '';
-	display: table;
-	clear: both;
-}
+
 
 .blurbs li.money{
 	background: url(img/money.png) 0 50% no-repeat;
@@ -543,7 +539,10 @@ input[type=text],textarea{
 	height: 510px;
 	background: #fff;
 	padding: 40px 0 50px 40px;
+  padding-bottom: 0;
 }
+
+
 
 .middle-block li {
 	float: left;
@@ -556,9 +555,10 @@ input[type=text],textarea{
 }
 
 .middle-block h2 {
-	font-size: 25px;
-	color: #585858;
-	margin-bottom: 24px;
+  font-size: 23px;
+ 
+  color: #585858;
+  margin-bottom: 24px;
 }
 
 .middle-block p {
@@ -576,11 +576,49 @@ input[type=text],textarea{
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	background-image: linear-gradient(to top, #e5e5e5, #fefefe);
+
 }
+
+.portfolio, .hire-us-now {
+  font-family: Nevil;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  padding:9px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-image: linear-gradient(to top, #e5e5e5, #fefefe);
+}
+
+.hire-us-now {
+  margin-left: 70px;
+}
+
 
 .middle-block a.read-more:hover{
 background-image: linear-gradient(to top, #fefefe, #e5e5e5);	
 }
+
+.middle-block a.portfolio:hover{
+background-image: linear-gradient(to top, #fefefe, #e5e5e5);  
+}
+
+.middle-block a.hire-us-now:hover{
+background-image: linear-gradient(to top, #fefefe, #e5e5e5);  
+}
+
+.grad {
+
+  background: url(img/services_gradient.gif) 0 0 repeat-x #fff;
+}
+
+.text-in{
+  font-size: 14px;
+
+}
+
 
 .designer {
 	list-style-image: url(img/arrow-designer.png);
@@ -597,6 +635,28 @@ background-image: linear-gradient(to top, #fefefe, #e5e5e5);
 .designer li:last-child {
 	border-bottom: none;
 }
+
+.benefis {
+
+ padding: 30px 0 0px 40px;
+}
+
+.benefis h2{
+  font-size: 23px; 
+  color: #585858;
+  margin-bottom: 24px;
+}
+
+.benefis li{
+ background: url(img/galochka.gif) no-repeat 0 50%;
+width: 340px;
+ padding-left: 40px;
+ margin: 0 40px 40px 0;
+ float: left;
+}
+
+
+
 
 
             /*FOOTER BEGIN*/
@@ -736,11 +796,16 @@ footer {
 }
 /*-------------------------------------------*/
 
-
-
-.top-footer:after,
-.main-block:after{
-  content: '';
+.clearfix,
+.blurbs:after ,
+.top-footer::after,
+.top-footer::before,
+.main-block::after,
+.middle-block::after,
+.wrapper::after,
+.benefis::after
+{
+  content: ' ';
   display: table;
   clear: both;
 }
